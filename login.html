@@ -3,15 +3,129 @@
 <head>
     <title>Login</title>
     <link rel="stylesheet" href="scripts/style.css">
-    <style> 
+    <style>
+        .form{
+    text-decoration: none;
+    transition: 0.4s ease;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+    }
+
+    /* table{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    } */
+
+    .log{
+    text-decoration: none;
+    transition: 0.4s ease;
+    padding: 10px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    }
+
+    input[type=submit] {
+    text-decoration: none;
+    transition: 0.4s ease;
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+
+    input[type=reset] {
+    text-decoration: none;
+    transition: 0.4s ease;
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    left: 60%;
+    margin-left: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
     
+
+    }
+
+    input[type=text] {
+    width: 150%;
+    padding: 12px 20px;
+    border-radius: 15px;
+    /* margin: 8px 0; */
+    /* box-sizing: border-box; */
+    }
+
+    input[type=password] {
+    width: 150%;
+    padding: 12px 20px;
+    border-radius: 15px;
+    /* margin: 8px 0; */
+    /* box-sizing: border-box; */
+    }
+
+    /* .form{
+    text-decoration: none;
+    transition: 0.4s ease;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+    } */
+
+    /* input[type=text] {
+    width: 150%;
+    padding: 12px 20px;
+    border-radius: 15px;
+    /* margin: 8px 0; */
+    /* box-sizing: border-box; 
+    } */
+    #log{
+    border: 1px solid yellow;
+    padding: 10px 30px;
+    text-decoration: none;
+    transition: 0.4s ease;
+    border-radius: 15px;
+    margin-left: 10%;
+
+    }
+
+    #log:hover{
+    background-color: yellow;
+    color: black;
+    
+    
+    }
+
+    .login-div{
+    position:sticky;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    padding: 8px;
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 15px;
+    }
     </style>
 </head>
 <body>
     <header>
         <div class="main">
         <div class="logo">
-            <img src="images/logo.png" alt="logo">
+            <a href=""><img src="images/logo.png" alt="logo"></a>
         </div>
         <ul>
         <li><a href="index.html">Home</a></li>
@@ -21,6 +135,26 @@
 
         </ul>
         </div>
+        <div class="login-div">
+        <h1>Login</h1>
+        </div>
+        <div class="form">
+        <table>
+            <form action="" name="login-form" method="POST">
+                <tr>
+                    <td><input type="text" name="email" id=""placeholder="E-mail" required></td>
+                </tr>
+                <tr>
+                    <td><input type="password" name="password" id="" placeholder="Enter Password" required></td>
+                </tr>
+                <tr>
+                    <div class="login">
+                    <td><input id="log" type="submit" value="Login"></td>                    
+                    </div>
+                </tr>
+            </form>
+        </table>
+    </div>
     </header>
 </body>
 </html>
